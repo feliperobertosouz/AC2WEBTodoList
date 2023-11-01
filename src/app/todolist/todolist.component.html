@@ -1,0 +1,6 @@
+<h2>todolist</h2>
+<li *ngFor="let todo of todoList">
+  <span [ngStyle]="{'text-decoration': todo.concluida ? 'line-through' : 'none'}">{{ todo.descricao }}</span>
+
+  <button (click)="concluir(todo)">Concluir</button>
+</li>
